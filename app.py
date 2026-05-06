@@ -412,7 +412,7 @@ def login():
             flash(f'Welcome back, {user["name"]}!', 'success')
             return redirect(url_for('dashboard'))
         else:
-            flash('Incorrect email/student number or password.', 'danger')
+            flash('Incorrect email ', 'danger')
 
     return render_template('login.html')
 
